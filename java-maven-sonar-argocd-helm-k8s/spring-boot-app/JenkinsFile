@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3.8.5-openjdk-17' // Use Maven Docker image
-      args '-v /opt:/opt' // Mount your volume if needed
-    }
+  agent any
   }
   stages {
     stage('Checkout') {
